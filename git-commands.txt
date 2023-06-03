@@ -1,0 +1,45 @@
+Configuration:
+
+	git config --global user.name "Your Name": Set your name for Git commits.
+	git config --global user.email "your@email.com": Set your email address for Git commits.
+
+Creating and Cloning Repositories:
+
+	git init: Initialize a new Git repository in the current directory.
+	git clone <repository URL>: Clone an existing Git repository to your local machine.
+
+Adding and Committing Changes:
+
+	git add <file>: Add a specific file to the staging area.
+	git add . or git add --all: Add all modified and new files to the staging area.
+	git commit -m "Commit message": Commit the changes in the staging area with a descriptive message.
+
+Branching and Merging:
+
+	git branch: List all local branches.
+	git branch <branch-name>: Create a new branch.
+	git checkout <branch-name>: Switch to a different branch.
+	git merge <branch-name>: Merge changes from a different branch into the current branch.
+
+Updating and Publishing:
+
+	git pull: Fetch and merge the latest changes from the remote repository into the current branch.
+	git push: Push your local commits to the remote repository.
+
+Status and History:
+
+	git status: Show the status of the working directory and staging area.
+	git log: Display the commit history.
+	git diff: Show the differences between the working directory and the staging area.
+
+Remote Repositories:
+
+	git remote -v: List all remote repositories.
+	git remote add <name> <repository URL>: Add a new remote repository.
+	git remote remove <name>: Remove a remote repository.
+
+Undoing Changes:
+
+	git checkout -- <file>: Discard changes in a specific file and revert it to the last committed state.
+	git reset HEAD <file>: Unstage changes for a specific file while preserving the modifications.
+git revert <commit-hash>: Create a new commit that undoes the changes made in a previous commit.

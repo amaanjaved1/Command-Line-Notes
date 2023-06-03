@@ -1,0 +1,41 @@
+Working with Directories and Files:
+
+	mkdir <directory-name>: Create a new directory.
+	cd <directory>: Change to a specific directory.
+	cd ~: Change to the user's home directory.
+	cd ..: Move to the parent directory.
+	ls or dir: List files and directories in the current directory.
+	ls -Force: List all files and directories, including hidden ones.
+	clear or cls: Clear the terminal screen.
+	New-Item -ItemType File -Name <file-name>: Create a new empty file.
+	ni <file-name>: Shortcut for creating a new file.
+	notepad <file-name>: Open a file in Notepad.
+	Remove-Item <file-name>: Remove a file.
+	Remove-Item -Recurse <directory-name>: Remove a directory and its contents recursively.
+	Remove-Item -Force <file-or-directory>: Forcefully remove a file or directory without prompting for confirmation.
+	pwd: Print the current working directory.
+	mv <source> <destination>: Move or rename a file or directory.
+	cp <source> <destination>: Copy a file or directory.
+
+Process Management:
+
+	Get-Process: Display currently running processes.
+	Stop-Process <PID>: Terminate a process with the specified process ID.
+
+File Permissions:
+
+	icacls <file-name> /grant <user-or-group>:<permissions>: Change the permissions of a file or directory.
+	takeown /F <file-name> /A: Take ownership of a file or directory.
+	Set-ExecutionPolicy <policy>: Set the execution policy for PowerShell scripts.
+
+Archiving and Compression:
+
+	Compress-Archive -Path <directory> -DestinationPath <archive.zip>: Create a zip archive.
+	Expand-Archive -Path <archive.zip> -DestinationPath <destination>: Extract files from a zip archive.
+
+Miscellaneous:
+
+	echo <message>: Display a message on the terminal.
+	Get-Content <file-name>: Display the contents of a file.
+	Select-String -Pattern <pattern> -Path <file-name>: Search for a pattern in a file.
+	Invoke-WebRequest -Uri <URL> -OutFile <output-file>: Download a file from a URL.
